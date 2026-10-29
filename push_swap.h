@@ -13,11 +13,12 @@
 # define PUSH_SWAP_H
 
 # include <limits.h>
-# include "../libft.h"
+# include <unistd.h>
+# include <stdlib.h>
 
 typedef struct s_swap
 {
-	int				content;
+	int				value;
 	int				index;
 	struct s_swap	*next;
 }	t_swap;
@@ -27,6 +28,12 @@ typedef struct s_config
 	int		strategy;
 	int		bench;
 }	t_config;
+
+typedef struct s_stack
+{
+	t_node	*top;
+	int		size;
+}	t_stack;
 
 int		check_duplicates(t_swap *stack_a, int value);
 int		parse_number(const char *s, int *final);
