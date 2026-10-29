@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 #include "push_swap.h"
 
-int	check_duplicates(t_swap *stack_a, int value)
+int	check_duplicates(t_node *stack_a, int value)
 {
-	t_swap	*temp;
+	t_node	*temp;
 
 	temp = stack_a;
 	while (temp)
 	{
-		if (temp->content == value)
+		if (temp->value == value)
 			return (1);
 		temp = temp->next;
 	}

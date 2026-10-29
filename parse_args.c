@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 #include "push_swap.h"
 
-int	add_number(t_swap **a, int value)
+int	add_number(t_node **a, int value)
 {
-	t_swap	*node;
+	t_node	*node;
 
 	if (check_duplicates(*a, value))
 		return (0);
@@ -24,7 +24,7 @@ int	add_number(t_swap **a, int value)
 	return (1);
 }
 
-int	parse_args(int argc, char **argv, t_swap **a, t_config *cfg)
+int	parse_args(int argc, char **argv, t_node **a, t_config *cfg)
 {
 	int	i;
 	int	value;
