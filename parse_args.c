@@ -41,6 +41,6 @@ int	parse_args(int argc, char **argv, t_node **a, t_config *cfg)
 			}
 		}
 		i++;
-		return (1);
 	}
+	return (1);
 }
