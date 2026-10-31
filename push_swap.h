@@ -6,7 +6,7 @@
 /*   By: syaseen <syaseen@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 15:14:16 by syaseen           #+#    #+#             */
-/*   Updated: 2026/10/28 15:22:36 by syaseen          ###   ########.fr       */
+/*   Updated: 2026/10/31 13:13:09 by syaseen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef PUSH_SWAP_H
@@ -40,5 +40,6 @@ int		parse_number(const char *s, int *final);
 int		parse_flag(const char *arg, t_config *cfg);
 int		parse_args(int argc, char **argv, t_node **a, t_config *cfg);
 int		add_number(t_node **a, int value);
+int		compute_disorder(t_node *a);
 
 #endif
